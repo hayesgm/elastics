@@ -752,6 +752,27 @@ module Elastics
       super
     end
 
+    #  ########## Elastics.put_index_id_mapping ##########
+    #  --------------
+    #  Elastics::Template
+    #  ---
+    #  put_index_mapping:
+    #  - PUT
+    #  - /<<index>>/<<type>>/_mapping
+    #  - <<type>>:
+    #      _id: <<properties>>
+    #
+    #
+    #  Usage:
+    #  Elastics.put_index_mapping :properties => properties,  # required
+    #                             :type       => nil,
+    #                             :index      => "elastics_test_index"
+    #
+    def Elastics.put_index_id_mapping(*vars)
+      ## this is a stub, used for reference
+      super
+    end
+
     #  ########## Elastics.put_mapping ##########
     #  --------------
     #  Elastics::Template

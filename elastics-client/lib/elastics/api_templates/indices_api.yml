@@ -139,7 +139,15 @@ put_index_mapping: &put_index_mapping
 # alias
 put_mapping: *put_index_mapping
 
+#-----------------------------------------------------------------------------#
+### Put Id Mappings ###
+# http://www.elasticsearch.org/guide/reference/api/admin-indices-put-mapping.html
 
+put_index_id_mapping: &put_index_id_mapping
+  - PUT
+  - /<<index>>/<<type>>/_mapping
+  - <<type>>:
+      _id: <<properties>>
 
 #-----------------------------------------------------------------------------#
 ### Delete Mappings ###
