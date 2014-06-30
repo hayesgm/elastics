@@ -537,12 +537,14 @@ module Elastics
     #  - settings:
     #      number_of_shards: <<number_of_shards= 5 >>
     #      number_of_replicas: <<number_of_replicas= 1 >>
+    #    mappings: <<mappings= {} >>
     #
     #
     #  Usage:
     #  Elastics.put_index :index              => "elastics_test_index",
     #                     :number_of_shards   => 5,
     #                     :number_of_replicas => 1
+    #                     :mappings           => {}
     #
     def Elastics.put_index(*vars)
       ## this is a stub, used for reference

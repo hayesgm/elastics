@@ -58,6 +58,7 @@ put_index: &create
   - settings:
       number_of_shards: <<number_of_shards= 5 >>
       number_of_replicas: <<number_of_replicas= 1 >>
+    mappings: <<mappings= {} >>
 
 # aliased
 create_index: *create
@@ -68,7 +69,6 @@ post_index:
   - settings:
       number_of_shards: <<number_of_shards= 5 >>
       number_of_replicas: <<number_of_replicas= 1 >>
-
 
 
 #-----------------------------------------------------------------------------#
